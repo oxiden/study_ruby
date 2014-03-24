@@ -14,7 +14,7 @@
 
 case ARGV.size
 when 1
-	File.open(ARGV[0]) do |file| # ポイント1
+  File.open(ARGV[0]) do |file| # ポイント1
     file.read.split("\n")[-3, 3].each do |x| # ポイント2
       puts x
     end
